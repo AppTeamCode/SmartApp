@@ -19,7 +19,6 @@
         android:weightSum="1">
 
         <ImageView
-            android:id="@+id/imageView3"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"
@@ -42,7 +41,7 @@
             android:background="@drawable/users_background"
             android:paddingLeft="10dp"
             android:text="关联设备1"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"/>
 
         <TextView
@@ -51,7 +50,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="15dp"
             android:text="在线"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"
             />
     </LinearLayout>
@@ -87,7 +86,7 @@
             android:background="@drawable/users_background"
             android:paddingLeft="10dp"
             android:text="关联设备2"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"/>
 
         <TextView
@@ -124,7 +123,6 @@
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -132,7 +130,7 @@
             android:background="@drawable/users_background"
             android:paddingLeft="10dp"
             android:text="关联设备3"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"/>
 
         <TextView
@@ -141,7 +139,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="15dp"
             android:text="在线"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"
             />
     </LinearLayout>
@@ -177,7 +175,7 @@
             android:background="@drawable/users_background"
             android:paddingLeft="10dp"
             android:text="关联设备4"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"/>
 
         <TextView
@@ -213,7 +211,6 @@
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -221,7 +218,7 @@
             android:background="@drawable/users_background"
             android:paddingLeft="10dp"
             android:text="关联设备5"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"/>
 
         <TextView
@@ -230,7 +227,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="15dp"
             android:text="在线"
-            android:textColor="@color/colortextview1"
+            android:textColor="@color/colorDeepRed"
             android:textSize="16sp"/>
     </LinearLayout>
 
