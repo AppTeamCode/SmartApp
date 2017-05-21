@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import app.cddic.com.smarter.R;
-import app.cddic.com.smarter.fragment.ChatFragment;
 
 /**
  * SmartApp
@@ -17,15 +16,17 @@ import app.cddic.com.smarter.fragment.ChatFragment;
 
 public abstract class SingleFragmentActivity extends BaseActivity {
 
+    private FragmentManager mFragmentManager;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_fragment);
-        FragmentManager fragmentManager = getSupportFragmentManager();
+        mFragmentManager = getSupportFragmentManager();
         Fragment fragment = createFragment();
         Log.d("TAG","测试");
         if (fragment != null) {
-            fragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit();
+            mFragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit();
         }
     }
 
@@ -35,4 +36,8 @@ public abstract class SingleFragmentActivity extends BaseActivity {
     }
 
     protected abstract Fragment createFragment();
+
+    public void replaceCurrentFragment(Fragment fragment) {
+        mFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
+    }
 }

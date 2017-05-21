@@ -1,13 +1,12 @@
-package app.cddic.com.smarter.fragment;
+package app.cddic.com.smarter.fragment.message;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import app.cddic.com.smarter.R;
+import app.cddic.com.smarter.activity.base.ChatActivity;
 import app.cddic.com.smarter.fragment.base.BaseFragment;
-import app.cddic.com.smarter.fragment.base.DeviceFragment;
 import app.cddic.com.smarter.utils.CommonViewHolder;
 import app.cddic.com.smarter.widget.TopView;
 
@@ -16,16 +15,33 @@ import app.cddic.com.smarter.widget.TopView;
  */
 
 public class ChatSettingsFragment extends BaseFragment {
-    private FragmentManager fm;
-    private Fragment fragment;
+
+    private static final String KEY_CONTACT_NAME = "contactName";
+
+    private String mContactName;
+
     private TopView mTopView;
     private TextView ChatLogTv,ChatFileTv,ClearChatInformationTv;
+    private TextView mContactNameTv;
     private Button DeleteContactBtn;
+
+    public static ChatSettingsFragment newInstance(String contactName) {
+        ChatSettingsFragment chatSettingsFragment = new ChatSettingsFragment();
+        Bundle args = new Bundle();
+        args.putSerializable(KEY_CONTACT_NAME, contactName);
+        chatSettingsFragment.setArguments(args);
+        return chatSettingsFragment;
+    }
 
     @Override
     protected void initViews() {
+
+        mContactName = getArguments().getString(KEY_CONTACT_NAME);
+
         mTopView =  CommonViewHolder.get(mView,R.id.chat_setting_topView);
         mTopView.setText("返回","聊天设置",null);
+        mContactNameTv = findView(R.id.contactName_tv);
+        mContactNameTv.setText(mContactName);
         ChatLogTv = CommonViewHolder.get(mView, R.id.chat_log_tv);
         ChatFileTv =  CommonViewHolder.get(mView,R.id.chat_file_tv);
         ClearChatInformationTv = CommonViewHolder.get(mView,R.id.clear_information_tv);
@@ -39,14 +55,15 @@ public class ChatSettingsFragment extends BaseFragment {
 
     @Override
     protected void setupListeners() {
-         fm = getActivity().getSupportFragmentManager();
+
         mTopView.setupListeners(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                fragment = new DeviceFragment();/*这个返回界面还没写，应该是聊天界面*/
-                fm.beginTransaction().replace(R.id.fragment_container,fragment).commit();
+                ((ChatActivity)mActivity).replaceCurrentFragment(
+                        ChatFragment.newInstance(mContactName)
+                );
             }
-        },null);
+        }, null);
 
         ChatLogTv.setOnClickListener(new View.OnClickListener() {
             @Override

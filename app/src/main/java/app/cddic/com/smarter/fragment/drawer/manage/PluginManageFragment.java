@@ -1,4 +1,4 @@
-package app.cddic.com.smarter.fragment.manage;
+package app.cddic.com.smarter.fragment.drawer.manage;
 
 import android.widget.ListView;
 

@@ -4,5 +4,6 @@
     <item name="titleTextViewInTopView" type="id"/>
     <item name="rightButtonInTopView" type="id"/>
     <item name="leftButtonInTopView" type="id"/>
+    <item name="rightImageViewInTopView" type="id"/>
 
 </resources>

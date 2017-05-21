@@ -1,16 +1,11 @@
-package app.cddic.com.smarter.fragment.manage;
+package app.cddic.com.smarter.fragment.drawer.manage;
 
 import android.content.DialogInterface;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.widget.TopView;

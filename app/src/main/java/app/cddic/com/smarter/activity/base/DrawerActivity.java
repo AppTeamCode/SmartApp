@@ -3,9 +3,9 @@ package app.cddic.com.smarter.activity.base;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
-import app.cddic.com.smarter.fragment.MyCollectionFragment;
-import app.cddic.com.smarter.fragment.MyInformationFragment;
-import app.cddic.com.smarter.fragment.SupportFragment;
+import app.cddic.com.smarter.fragment.drawer.MyCollectionFragment;
+import app.cddic.com.smarter.fragment.drawer.MyInformationFragment;
+import app.cddic.com.smarter.fragment.drawer.SupportFragment;
 
 /**
  * SmartApp

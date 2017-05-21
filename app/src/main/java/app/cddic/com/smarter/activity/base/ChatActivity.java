@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 
-import app.cddic.com.smarter.fragment.ChatFragment;
+import app.cddic.com.smarter.fragment.message.ChatFragment;
 
 /**
  * SmartApp

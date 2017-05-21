@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 
-import app.cddic.com.smarter.fragment.AddContactFragment;
-import app.cddic.com.smarter.fragment.ContactDetailFragment;
+import app.cddic.com.smarter.fragment.contact.AddContactFragment;
+import app.cddic.com.smarter.fragment.contact.ContactDetailFragment;
 import app.cddic.com.smarter.fragment.contact.DeviceContactFragment;
 import app.cddic.com.smarter.fragment.contact.NewFriendsFragment;
 

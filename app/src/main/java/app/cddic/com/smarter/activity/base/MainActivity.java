@@ -171,7 +171,8 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onPageSelected(int position) {
-                switchCurrentState(position);
+                mCurrent = position;
+                switchCurrentState(mCurrent);
             }
 
             @Override

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -34,6 +35,7 @@ public class TopView extends LinearLayout {
     private TextView mTitleTextView;
     private Button mLeftButton;
     private Button mRightButton;
+    private ImageView mRightIv;
 
     public TopView(Context context) {
         super(context);
@@ -62,9 +64,10 @@ public class TopView extends LinearLayout {
         setOrientation(HORIZONTAL);
         setGravity(Gravity.CENTER_VERTICAL);
 
-        LayoutParams buttonLayoutParams = new LayoutParams(200, ViewGroup.LayoutParams.WRAP_CONTENT);
+        LayoutParams buttonLayoutParams = new LayoutParams(160, ViewGroup.LayoutParams.WRAP_CONTENT);
         LayoutParams textViewLayoutParams = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, 1.0f);
+        LayoutParams imageViewLayoutParams = new LayoutParams(160, 50);
 
         mLeftButton = new Button(mContext);
         mLeftButton.setId(R.id.leftButtonInTopView);
@@ -92,6 +95,12 @@ public class TopView extends LinearLayout {
         mRightButton.setTextColor(Color.WHITE);
         addView(mRightButton, buttonLayoutParams);
 
+        mRightIv = new ImageView(mContext);
+        mRightIv.setId(R.id.rightImageViewInTopView);
+        mRightIv.setImageResource(R.drawable.ic_contact);
+        mRightIv.setPadding(90, 0, 20, 0);
+        mRightIv.setVisibility(GONE);
+        addView(mRightIv, imageViewLayoutParams);
     }
 
     public void setText(String left, String title, String right) {
@@ -103,5 +112,11 @@ public class TopView extends LinearLayout {
     public void setupListeners(OnClickListener left, OnClickListener right) {
         mLeftButton.setOnClickListener(left);
         mRightButton.setOnClickListener(right);
+        mRightIv.setOnClickListener(right);
+    }
+
+    public void showRightAsImageView() {
+        mRightButton.setVisibility(GONE);
+        mRightIv.setVisibility(VISIBLE);
     }
 }

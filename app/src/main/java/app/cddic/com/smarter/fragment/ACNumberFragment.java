@@ -14,6 +14,7 @@ import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.activity.base.RegisterActivity;
 import app.cddic.com.smarter.db.DBHelper;
 import app.cddic.com.smarter.fragment.base.BaseFragment;
+import app.cddic.com.smarter.fragment.drawer.ResultFragment;
 import app.cddic.com.smarter.utils.StaticClass;
 
 /**

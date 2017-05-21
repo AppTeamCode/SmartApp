@@ -44,17 +44,32 @@ public class DeviceItemsAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup) {
+
         if (view == null) {
             view = LayoutInflater.from(mContext).inflate(R.layout.list_item_for_device,viewGroup,false);
         }
+
         LinearLayout left = CommonViewHolder.get(view, R.id.left_deviceItem);
         left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = DeviceActivity.newInstance(mContext, DeviceActivity.Type.DEVICE_DETAIL);
-                mContext.startActivity(intent);
+                startDeviceActivity(DeviceActivity.Type.DEVICE_DETAIL, "");
             }
         });
+
+        LinearLayout right = CommonViewHolder.get(view, R.id.right_deviceItem);
+        right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startDeviceActivity(DeviceActivity.Type.DEVICE_MESSAGE, "");
+            }
+        });
+
         return view;
+    }
+
+    private void startDeviceActivity(int type, String deviceName) {
+        Intent intent = DeviceActivity.newInstance(mContext, type, deviceName);
+        mContext.startActivity(intent);
     }
 }

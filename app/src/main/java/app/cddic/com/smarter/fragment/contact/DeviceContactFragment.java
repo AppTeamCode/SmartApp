@@ -4,28 +4,17 @@ package app.cddic.com.smarter.fragment.contact;
  * Created by 小帆哥 on 2017/5/9.
  */
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
 
 import app.cddic.com.smarter.R;
-import app.cddic.com.smarter.activity.base.MainActivity;
 import app.cddic.com.smarter.fragment.base.BaseFragment;
 import app.cddic.com.smarter.widget.TopView;
 
 
 public class DeviceContactFragment extends BaseFragment {
+
     private TopView mTopView;
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Toast.makeText(getActivity(), "QuickProcessing create", Toast.LENGTH_SHORT).show();
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }
+
     protected void initViews() {
 
         mTopView =findView(R.id.quick_processing_topView);

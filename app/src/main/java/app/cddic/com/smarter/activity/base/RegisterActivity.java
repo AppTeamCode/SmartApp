@@ -12,7 +12,7 @@ import app.cddic.com.smarter.fragment.ACNumberFragment;
 import app.cddic.com.smarter.fragment.base.BaseFragment;
 import app.cddic.com.smarter.fragment.CheckPhoneFragment;
 import app.cddic.com.smarter.fragment.InforFragment;
-import app.cddic.com.smarter.fragment.ResultFragment;
+import app.cddic.com.smarter.fragment.drawer.ResultFragment;
 
 /**
  * 项目名：  SmartApp

@@ -17,56 +17,66 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:src="@drawable/setbar_bg">
-        <TextView
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:src="@drawable/setbar_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="3dp"
+                android:text="扫描二维码"
+                android:textSize="20dp"
+                />
+
+            <ImageButton
+                android:id="@+id/Scan_QR_code_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/arrow_right"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/searchByCondition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="扫描二维码"
-            android:textSize="20dp"
-            android:layout_marginLeft="20dp"
-            android:padding="3dp"
-            />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Scan_QR_code_btn"
-            android:layout_marginLeft="200dp"
-            android:src="@drawable/arrow_right"/>
+            android:orientation="horizontal"
+            android:src="@drawable/setbar_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="3dp"
+                android:text="按条件查找"
+                android:textSize="20dp"
+                />
+
+            <ImageButton
+                android:id="@+id/conditional_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/arrow_right"/>
+        </LinearLayout>
     </LinearLayout>
-<Space
-    android:layout_width="match_parent"
-    android:layout_height="10dp" />
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:src="@drawable/setbar_bg">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="按条件查找"
-        android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:padding="3dp"
-        />
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:src="@drawable/arrow_right"
-        android:id="@+id/conditional_search_btn"/>
-</LinearLayout>
-    </LinearLayout>
-<Space
+
+    <Space
     android:layout_width="match_parent"
     android:layout_height="100dp" />
     <LinearLayout

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 
 import app.cddic.com.smarter.fragment.device.DeviceDetailsFragment;
+import app.cddic.com.smarter.fragment.device.DeviceMessageFragment;
 
 /**
  * SmartApp
@@ -16,10 +17,12 @@ import app.cddic.com.smarter.fragment.device.DeviceDetailsFragment;
 public class DeviceActivity extends SingleFragmentActivity {
 
     private static final String EXTRA_TYPE = "extraType";
+    private static final String EXTRA_DEVICE_NAME = "deviceName";
 
-    public static Intent newInstance(Context context, int type) {
+    public static Intent newInstance(Context context, int type, String deviceName) {
         Intent intent = new Intent(context, DeviceActivity.class);
         intent.putExtra(EXTRA_TYPE, type);
+        intent.putExtra(EXTRA_DEVICE_NAME, deviceName);
         return intent;
     }
 
@@ -36,6 +39,9 @@ public class DeviceActivity extends SingleFragmentActivity {
             case Type.DEVICE_DETAIL:
                 return new DeviceDetailsFragment();
 
+            case Type.DEVICE_MESSAGE:
+                return DeviceMessageFragment.newInstance(getIntent().getStringExtra(EXTRA_DEVICE_NAME));
+
             default:
                 return null;
         }
@@ -44,5 +50,6 @@ public class DeviceActivity extends SingleFragmentActivity {
 
     public static final class Type {
         public static final int DEVICE_DETAIL = 0;
+        public static final int DEVICE_MESSAGE = 1;
     }
 }

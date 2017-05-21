@@ -8,13 +8,13 @@ import android.support.v4.app.FragmentManager;
 import android.view.View;
 
 import app.cddic.com.smarter.R;
-import app.cddic.com.smarter.fragment.manage.AccountManageFragment;
-import app.cddic.com.smarter.fragment.manage.DataManageFragment;
-import app.cddic.com.smarter.fragment.manage.HistoryManageFragment;
-import app.cddic.com.smarter.fragment.manage.ManageFragment;
-import app.cddic.com.smarter.fragment.manage.MessageManageFragment;
-import app.cddic.com.smarter.fragment.manage.PluginManageFragment;
-import app.cddic.com.smarter.fragment.manage.PrivacyManageFragment;
+import app.cddic.com.smarter.fragment.drawer.manage.AccountManageFragment;
+import app.cddic.com.smarter.fragment.drawer.manage.DataManageFragment;
+import app.cddic.com.smarter.fragment.drawer.manage.HistoryManageFragment;
+import app.cddic.com.smarter.fragment.drawer.manage.ManageFragment;
+import app.cddic.com.smarter.fragment.drawer.manage.MessageManageFragment;
+import app.cddic.com.smarter.fragment.drawer.manage.PluginManageFragment;
+import app.cddic.com.smarter.fragment.drawer.manage.PrivacyManageFragment;
 import app.cddic.com.smarter.widget.TopView;
 
 /**

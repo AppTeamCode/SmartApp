@@ -4,7 +4,7 @@
     android:background="#e9f1f6"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <app.edu.cdu.com.smartsecurity_manager.ui.widget.TopView
+    <app.cddic.com.smarter.widget.TopView
         android:id="@+id/device_message_topView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

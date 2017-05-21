@@ -1,4 +1,4 @@
-package app.cddic.com.smarter.fragment;
+package app.cddic.com.smarter.fragment.message;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import app.cddic.com.smarter.R;
+import app.cddic.com.smarter.activity.base.ChatActivity;
 import app.cddic.com.smarter.entity.ChatMSG;
 import app.cddic.com.smarter.entity.ChatMSGLab;
 import app.cddic.com.smarter.fragment.base.BaseFragment;
@@ -32,6 +33,7 @@ public class ChatFragment extends BaseFragment {
     private static final String KEY_CONTACT_NAME = "contactName";
 
     private ChatAdapter mChatAdapter;
+    private String mContactName;
 
     private TopView mTopView;
     private RecyclerView mChatRv;
@@ -48,9 +50,10 @@ public class ChatFragment extends BaseFragment {
 
     @Override
     protected void initViews() {
-        String contactName = getArguments().getString(KEY_CONTACT_NAME);
+        mContactName = getArguments().getString(KEY_CONTACT_NAME);
         mTopView = findView(R.id.topView);
-        mTopView.setText("消息", contactName, null);
+        mTopView.setText("消息", mContactName, null);
+        mTopView.showRightAsImageView();
         mChatRv = findView(R.id.chat_recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setStackFromEnd(true);
@@ -73,7 +76,14 @@ public class ChatFragment extends BaseFragment {
             public void onClick(View v) {
                 getActivity().finish();
             }
-        }, null);
+        }, new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((ChatActivity) mActivity).replaceCurrentFragment(
+                        ChatSettingsFragment.newInstance(mContactName)
+                );
+            }
+        });
 
         mSendBtn.setOnClickListener(new View.OnClickListener() {
             @Override

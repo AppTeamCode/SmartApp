@@ -1,4 +1,4 @@
-package app.cddic.com.smarter.fragment;
+package app.cddic.com.smarter.fragment.contact;
 
 import android.content.Intent;
 import android.os.Bundle;

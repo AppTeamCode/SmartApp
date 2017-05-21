@@ -1,13 +1,15 @@
-package app.cddic.com.smarter.fragment;
+package app.cddic.com.smarter.fragment.contact;
 
-import android.support.v4.app.FragmentManager;
+import android.content.Context;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SearchView;
 
 import app.cddic.com.smarter.R;
+import app.cddic.com.smarter.activity.base.ContactActivity;
 import app.cddic.com.smarter.fragment.base.BaseFragment;
+import app.cddic.com.smarter.fragment.contact.AddContactFragment;
 import app.cddic.com.smarter.widget.TopView;
 
 /**
@@ -15,6 +17,7 @@ import app.cddic.com.smarter.widget.TopView;
  */
 
 public class ConditionalSearchFragment extends BaseFragment {
+
     private TopView mTopView;
     private SearchView mSearchView;
     private Button PSbtn;
@@ -23,6 +26,7 @@ public class ConditionalSearchFragment extends BaseFragment {
     private ImageButton Professionbtn;
     private ImageButton Locationbtn;
     private ImageButton Agebtn;
+
     @Override
     protected void initViews() {
         mTopView=(TopView)mView.findViewById(R.id.conditional_search_TopView);
@@ -48,9 +52,8 @@ public class ConditionalSearchFragment extends BaseFragment {
         mTopView.setupListeners(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm=getFragmentManager();
-                AddContactFragment fragment=new AddContactFragment();
-                fm.beginTransaction().replace(R.id.fragment_container,fragment).commit();
+                ((ContactActivity) mActivity).replaceCurrentFragment(
+                        new AddContactFragment());
             }
         },null);
 
@@ -77,6 +80,6 @@ public class ConditionalSearchFragment extends BaseFragment {
 
     @Override
     protected int setLayoutRes() {
-        return 0;
+        return R.layout.fragment_conditional_search;
     }
 }

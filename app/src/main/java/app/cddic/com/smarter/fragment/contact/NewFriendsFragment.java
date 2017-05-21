@@ -21,7 +21,7 @@ public class NewFriendsFragment extends BaseFragment {
     @Override
     protected void initViews() {
         mTopView = findView(R.id.new_contact_TopView);
-        mTopView.setText("返回","新联系人",null);
+        mTopView.setText("返回","新朋友",null);
     }
 
     @Override

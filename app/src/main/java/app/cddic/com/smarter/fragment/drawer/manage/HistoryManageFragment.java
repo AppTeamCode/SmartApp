@@ -1,4 +1,4 @@
-package app.cddic.com.smarter.fragment.manage;
+package app.cddic.com.smarter.fragment.drawer.manage;
 
 import app.cddic.com.smarter.R;
 
@@ -9,11 +9,12 @@ import app.cddic.com.smarter.R;
  * Copyright © 2017 All rights Reserved by Pantiy
  */
 
-public class DataManageFragment extends ManageFragment {
+public class HistoryManageFragment extends ManageFragment {
+
 
     @Override
     protected void setFragmentName() {
-        mFragmentName = "流量管理";
+      mFragmentName="记录管理";
     }
 
     @Override
@@ -33,6 +34,6 @@ public class DataManageFragment extends ManageFragment {
 
     @Override
     protected int setLayoutRes() {
-        return R.layout.fragment_data_manage;
+        return R.layout.fragment_history_manage;
     }
 }
