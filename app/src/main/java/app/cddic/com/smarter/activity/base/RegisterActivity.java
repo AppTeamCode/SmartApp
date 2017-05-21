@@ -9,7 +9,7 @@ import java.util.List;
 import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.entity.RegisterMSG;
 import app.cddic.com.smarter.fragment.ACNumberFragment;
-import app.cddic.com.smarter.fragment.BaseFragment;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 import app.cddic.com.smarter.fragment.CheckPhoneFragment;
 import app.cddic.com.smarter.fragment.InforFragment;
 import app.cddic.com.smarter.fragment.ResultFragment;

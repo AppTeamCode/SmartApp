@@ -1,7 +1,7 @@
 package app.cddic.com.smarter.fragment.manage;
 
 
-import app.cddic.com.smarter.fragment.BaseFragment;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 
 /**
  * SmartSecurity-Manager

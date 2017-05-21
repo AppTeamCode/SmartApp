@@ -3,11 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <app.cddic.com.smarter.widget.TopView
         android:id="@+id/new_contact_TopView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </app.cddic.com.smarter.widget.TopView>
+        android:layout_height="wrap_content"/>
+
     <LinearLayout
         android:background="#ffffff"
         android:layout_marginLeft="5dp"

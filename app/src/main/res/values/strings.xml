@@ -21,6 +21,7 @@
     <string name="query_hint">搜索</string>
     <string name="device">设备</string>
     <string name="contact">联系人</string>
+    <string name="new_friends">新朋友</string>
     <string name="message">消息</string>
     <string name="des_deviceIcon">设备头像</string>
     <string name="device_name">设备名称</string>

@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import app.cddic.com.smarter.R;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
+import app.cddic.com.smarter.fragment.base.DeviceFragment;
 import app.cddic.com.smarter.utils.CommonViewHolder;
 import app.cddic.com.smarter.widget.TopView;
 
@@ -13,7 +15,7 @@ import app.cddic.com.smarter.widget.TopView;
  * Created by Hai on 2017/4/25.
  */
 
-public class ChatSettingsFragment extends BaseFragment{
+public class ChatSettingsFragment extends BaseFragment {
     private FragmentManager fm;
     private Fragment fragment;
     private TopView mTopView;
@@ -41,7 +43,7 @@ public class ChatSettingsFragment extends BaseFragment{
         mTopView.setupListeners(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                fragment = new  DeviceFragment();/*这个返回界面还没写，应该是聊天界面*/
+                fragment = new DeviceFragment();/*这个返回界面还没写，应该是聊天界面*/
                 fm.beginTransaction().replace(R.id.fragment_container,fragment).commit();
             }
         },null);

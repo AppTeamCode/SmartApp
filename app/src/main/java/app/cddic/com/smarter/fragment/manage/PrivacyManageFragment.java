@@ -1,12 +1,9 @@
 package app.cddic.com.smarter.fragment.manage;
 
-import android.content.Intent;
 import android.view.View;
 import android.widget.Switch;
 
 import app.cddic.com.smarter.R;
-import app.cddic.com.smarter.activity.base.MainActivity;
-import app.cddic.com.smarter.widget.TopView;
 
 /**
  * SmartSecurity-Manager
@@ -91,6 +88,6 @@ public class PrivacyManageFragment extends ManageFragment {
 
     @Override
     protected int setLayoutRes() {
-        return R.layout.fragment_privacy_mange;
+        return R.layout.fragment_privacy_manage;
     }
 }

@@ -1,13 +1,9 @@
 package app.cddic.com.smarter.fragment.manage;
 
-import android.content.Intent;
-import android.view.View;
 import android.widget.ListView;
 
 import app.cddic.com.smarter.R;
-import app.cddic.com.smarter.activity.base.MainActivity;
 import app.cddic.com.smarter.adapter.PluginManageItemsAdapter;
-import app.cddic.com.smarter.widget.TopView;
 
 /**
  * SmartSecurity-Manager

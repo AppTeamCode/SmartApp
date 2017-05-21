@@ -1,15 +1,13 @@
 package app.cddic.com.smarter.fragment;
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.SearchView;
 
 ;
 import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.activity.base.MainActivity;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 import app.cddic.com.smarter.widget.TopView;
 
 

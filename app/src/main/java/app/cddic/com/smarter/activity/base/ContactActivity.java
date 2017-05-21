@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 
 import app.cddic.com.smarter.fragment.AddContactFragment;
 import app.cddic.com.smarter.fragment.ContactDetailFragment;
+import app.cddic.com.smarter.fragment.contact.DeviceContactFragment;
+import app.cddic.com.smarter.fragment.contact.NewFriendsFragment;
 
 /**
  * SmartApp
@@ -34,11 +36,21 @@ public class ContactActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
+
         switch (getIntent().getIntExtra(EXTRA_TYPE, -1)) {
+
             case Type.ADD_CONTACT:
                 return new AddContactFragment();
+
             case Type.CONTACT_DETAIL:
                 return ContactDetailFragment.newInstance(getIntent().getStringExtra(EXTRA_CONTACT_NAME));
+
+            case Type.NEW_FRIENDS:
+                return new NewFriendsFragment();
+
+            case Type.DEVICE_CONTACT:
+                return new DeviceContactFragment();
+
             default:
                 return null;
         }
@@ -47,5 +59,7 @@ public class ContactActivity extends SingleFragmentActivity {
     public static final class Type {
         public static final int ADD_CONTACT = 0;
         public static final int CONTACT_DETAIL = 1;
+        public static final int NEW_FRIENDS = 2;
+        public static final int DEVICE_CONTACT = 3;
     }
 }

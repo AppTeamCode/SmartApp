@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.activity.base.RegisterActivity;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 
 /**
  * 项目名：  SmartApp

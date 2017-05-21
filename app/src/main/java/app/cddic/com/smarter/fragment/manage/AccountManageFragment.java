@@ -40,15 +40,9 @@ public class AccountManageFragment extends ManageFragment {
         mFragmentName="账号管理";
     }
 
-    @Nullable
+
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Toast.makeText(getActivity(), "AccoutManage create", Toast.LENGTH_SHORT).show();
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }        @Override
     protected void initViews() {
-        mTopView = (TopView) mView.findViewById(R.id.account_manage_topView);
-        mTopView.setText("返回", "我的设置", null);
         text_id_manage_add = (TextView) mView.findViewById(R.id.textview_id_manage_add);
         textView_id_manage_login_setting = (TextView)mView.findViewById(R.id.textview_id_manage_login_setting);
         textView_id_manage_exit = (TextView)mView.findViewById(R.id.textview_id_manage_exit);

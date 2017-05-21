@@ -7,15 +7,12 @@
     <app.cddic.com.smarter.widget.TopView
         android:id="@+id/device_details_TopView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </app.cddic.com.smarter.widget.TopView>
+        android:layout_height="wrap_content"/>
 
-    <app.cddic.com.smarter.widget.DeviceDetailsGridView
-        android:id="@+id/device_details_GridView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </app.cddic.com.smarter.widget.DeviceDetailsGridView>
-
+    <!--<app.cddic.com.smarter.widget.DeviceDetailsGridView-->
+        <!--android:id="@+id/device_details_GridView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
 
     <View
         android:layout_width="fill_parent"

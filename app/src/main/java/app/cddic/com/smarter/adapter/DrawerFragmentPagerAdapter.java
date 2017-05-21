@@ -6,9 +6,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.cddic.com.smarter.fragment.ContactFragment;
-import app.cddic.com.smarter.fragment.DeviceFragment;
-import app.cddic.com.smarter.fragment.MessageFragment;
+import app.cddic.com.smarter.fragment.base.ContactFragment;
+import app.cddic.com.smarter.fragment.base.DeviceFragment;
+import app.cddic.com.smarter.fragment.base.MessageFragment;
 
 
 /**

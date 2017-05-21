@@ -1,6 +1,5 @@
 package app.cddic.com.smarter.fragment;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +9,7 @@ import android.view.ViewGroup;
 
 import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.activity.base.LoginActivity;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 
 /**
  * 项目名：  SmartApp

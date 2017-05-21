@@ -5,6 +5,7 @@ import android.view.View;
 
 import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.activity.base.MainActivity;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 import app.cddic.com.smarter.widget.TopView;
 
 

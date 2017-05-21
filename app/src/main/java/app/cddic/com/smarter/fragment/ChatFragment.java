@@ -1,7 +1,6 @@
 package app.cddic.com.smarter.fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,6 +16,7 @@ import java.util.List;
 import app.cddic.com.smarter.R;
 import app.cddic.com.smarter.entity.ChatMSG;
 import app.cddic.com.smarter.entity.ChatMSGLab;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 import app.cddic.com.smarter.utils.CommonViewHolder;
 import app.cddic.com.smarter.widget.TopView;
 

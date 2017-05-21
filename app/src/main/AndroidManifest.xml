@@ -48,6 +48,8 @@
 
         <activity android:name=".activity.base.DrawerActivity"/>
 
+        <activity android:name=".activity.base.DeviceActivity"/>
+
         <!--服务-->
         <service android:name=".service.SmartService"/>
     </application>

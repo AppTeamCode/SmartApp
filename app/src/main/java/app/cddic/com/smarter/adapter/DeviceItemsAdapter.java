@@ -1,14 +1,15 @@
 package app.cddic.com.smarter.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import app.cddic.com.smarter.R;
+import app.cddic.com.smarter.activity.base.DeviceActivity;
 import app.cddic.com.smarter.utils.CommonViewHolder;
 
 
@@ -42,7 +43,7 @@ public class DeviceItemsAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(final int i, View view, ViewGroup viewGroup) {
         if (view == null) {
             view = LayoutInflater.from(mContext).inflate(R.layout.list_item_for_device,viewGroup,false);
         }
@@ -50,7 +51,8 @@ public class DeviceItemsAdapter extends BaseAdapter {
         left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "click", Toast.LENGTH_SHORT).show();
+                Intent intent = DeviceActivity.newInstance(mContext, DeviceActivity.Type.DEVICE_DETAIL);
+                mContext.startActivity(intent);
             }
         });
         return view;

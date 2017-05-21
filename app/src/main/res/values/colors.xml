@@ -12,5 +12,6 @@
     <color name="colorBrown">#492c2c</color>
     <color name="colorDeepBlue">#264c72</color>
     <color name="colorMessageRadioButtonChecked">#6E6363</color>
+    <color name="colorGray">#f1f0f0</color>
 
 </resources>

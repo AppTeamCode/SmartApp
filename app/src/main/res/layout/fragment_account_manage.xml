@@ -4,10 +4,8 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:weightSum="1">
-    <app.edu.cdu.com.smartsecurity_manager.ui.widget.TopView
-        android:id="@+id/account_manage_topView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
+
     <include layout="@layout/user_account_info_list_item"/>
 
     <LinearLayout

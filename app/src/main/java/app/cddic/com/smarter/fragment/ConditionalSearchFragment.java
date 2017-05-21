@@ -7,6 +7,7 @@ import android.widget.ImageButton;
 import android.widget.SearchView;
 
 import app.cddic.com.smarter.R;
+import app.cddic.com.smarter.fragment.base.BaseFragment;
 import app.cddic.com.smarter.widget.TopView;
 
 /**

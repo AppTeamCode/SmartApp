@@ -1,5 +1,7 @@
 package app.cddic.com.smarter.fragment.manage;
 
+import app.cddic.com.smarter.R;
+
 /**
  * SmartSecurity-Manager
  * app.edu.cdu.com.smartsecurity_manager.fragment.manage
@@ -11,7 +13,7 @@ public class DataManageFragment extends ManageFragment {
 
     @Override
     protected void setFragmentName() {
-
+        mFragmentName = "流量管理";
     }
 
     @Override
@@ -31,6 +33,6 @@ public class DataManageFragment extends ManageFragment {
 
     @Override
     protected int setLayoutRes() {
-        return 0;
+        return R.layout.fragment_data_manage;
     }
 }
