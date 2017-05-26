@@ -67,7 +67,8 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mSearchView.clearFocus();
+        Log.i(TAG, "onResume()");
+        review();
     }
 
     @Override
@@ -162,6 +163,8 @@ public class MainActivity extends BaseActivity {
                 }
             }
         });
+
+
 
         mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -278,5 +281,9 @@ public class MainActivity extends BaseActivity {
         } catch (IllegalAccessException iae) {
             Log.e(TAG, "field.get() ", iae);
         }
+    }
+
+    private void review() {
+//        mSearchView.clearFocus();
     }
 }
