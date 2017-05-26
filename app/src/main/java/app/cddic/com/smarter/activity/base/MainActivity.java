@@ -284,6 +284,6 @@ public class MainActivity extends BaseActivity {
     }
 
     private void review() {
-//        mSearchView.clearFocus();
+        mSearchView.clearFocus();
     }
 }
